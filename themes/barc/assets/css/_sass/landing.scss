@@ -1,0 +1,109 @@
+header.hero {
+    text-align: center;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img.app-icon {
+        border: 1px solid $cellBorderLight;
+        border-radius: 28.5px;
+        box-shadow: 0px 2px $minor $cellBorderLight;
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    p {
+        max-width: 18rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        margin-top: $middle;
+        margin-bottom: $middle;
+        outline: 1px solid $cellBorderLight;
+        border-radius: 14px;
+        box-shadow: $shadow;
+
+        
+        input[type=email] {
+            background: $white;
+            font-size: $footnote;
+            padding: 14px;
+            border: none;
+            border-radius: 14px 0px 0px 14px;
+            margin: 0px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type=submit] {
+            color: $white;
+            background: $black;
+            border: none;
+            border-radius: 0 14px 14px 0;
+            font-size: $footnote;
+            font-weight: 600;
+            padding: 14px 28px;
+        }
+
+        &:focus-within {
+            outline: 4px solid $selection;
+        }
+    }
+}
+
+section.features {
+    margin-top: $middle;
+
+    figure.feature {
+        background: $white;
+        border: 1px solid $cellBorderLight;
+        border-radius: 14px;
+        box-shadow: $shadow;
+        display: flex;
+        flex-direction: row;
+        width: $page;
+        height: 20rem;
+        margin: $middle 0;
+        overflow: hidden;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        figcaption {
+            margin: $middle;
+            flex: 1;
+            margin-right: 0;
+            align-self: center;
+            text-wrap: balance;
+        }
+
+        picture {
+            img.phone {
+                width: 216px;
+                height: 443px;
+            }
+            
+            margin-top: $middle;
+            margin-right: $major;
+            margin-left: $middle;
+        }
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+            picture {
+                margin-right: $middle;
+                margin-left: $major;
+            }
+            figcaption {
+                margin-right: $middle;
+                margin-left: 0;
+            }
+        }
+    }
+}

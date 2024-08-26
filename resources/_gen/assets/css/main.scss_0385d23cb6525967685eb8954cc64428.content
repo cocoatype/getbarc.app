@@ -1,0 +1,115 @@
+::selection {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800; }
+
+p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+header.hero {
+  text-align: center;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  header.hero img.app-icon {
+    border: 1px solid #E8E9E9;
+    border-radius: 28.5px;
+    box-shadow: 0px 2px 1rem #E8E9E9;
+    width: 8rem;
+    height: 8rem; }
+  header.hero p {
+    max-width: 18rem; }
+  header.hero form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    outline: 1px solid #E8E9E9;
+    border-radius: 14px;
+    box-shadow: 0px 2px 2rem #E8E9E9; }
+    header.hero form input[type=email] {
+      background: #FFFFFF;
+      font-size: 1rem;
+      padding: 14px;
+      border: none;
+      border-radius: 14px 0px 0px 14px;
+      margin: 0px; }
+      header.hero form input[type=email]:focus {
+        outline: none; }
+    header.hero form input[type=submit] {
+      color: #FFFFFF;
+      background: #000000;
+      border: none;
+      border-radius: 0 14px 14px 0;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 28px; }
+    header.hero form:focus-within {
+      outline: 4px solid rgba(0, 0, 0, 0.3); }
+
+section.features {
+  margin-top: 2rem; }
+  section.features figure.feature {
+    background: #FFFFFF;
+    border: 1px solid #E8E9E9;
+    border-radius: 14px;
+    box-shadow: 0px 2px 2rem #E8E9E9;
+    display: flex;
+    flex-direction: row;
+    width: 38rem;
+    height: 20rem;
+    margin: 2rem 0;
+    overflow: hidden; }
+    section.features figure.feature:first-child {
+      margin-top: 0; }
+    section.features figure.feature figcaption {
+      margin: 2rem;
+      flex: 1;
+      margin-right: 0;
+      align-self: center;
+      text-wrap: balance; }
+    section.features figure.feature picture {
+      margin-top: 2rem;
+      margin-right: 4rem;
+      margin-left: 2rem; }
+      section.features figure.feature picture img.phone {
+        width: 216px;
+        height: 443px; }
+    section.features figure.feature:nth-of-type(even) {
+      flex-direction: row-reverse; }
+      section.features figure.feature:nth-of-type(even) picture {
+        margin-right: 2rem;
+        margin-left: 4rem; }
+      section.features figure.feature:nth-of-type(even) figcaption {
+        margin-right: 2rem;
+        margin-left: 0; }
+
+html {
+  background: #F2F2F5; }
+
+body {
+  color: #000000;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px; }
+
+main {
+  display: flex;
+  margin: auto;
+  max-width: 38rem;
+  flex-direction: column;
+  margin-top: 4rem;
+  align-items: center; }
+
+footer {
+  margin-top: 1rem; }
+
+a {
+  color: #000000; }

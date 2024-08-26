@@ -1,0 +1,29 @@
+$caption2: 0.75rem; // 12px
+$caption1: 0.875rem; // 14px
+$footnote: 1rem; // 16px
+$subhead: 1.125rem; // 18px
+$callout: 1.25rem; // 20px
+$body: 1.5rem; // 24px
+$headline: 1.875rem; // 30px
+$title3: 2.25rem; // 36px
+$title2: 3rem; // 48px
+$title1: 3.75rem; // 60px
+$largeTitle: 4.5rem; // 72px
+
+::selection {
+    background-color: $selection;
+}
+
+h1 {
+    font-size: $headline;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: $callout;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
