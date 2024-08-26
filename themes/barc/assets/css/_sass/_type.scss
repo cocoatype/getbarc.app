@@ -24,10 +24,30 @@ h1 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: 800;
+
+    @include mobile {
+        font-size: $body;
+    }
+}
+
+h2 {
+    font-size: $body;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+
+    @include mobile {
+        font-size: $callout;
+    }
 }
 
 p {
     font-size: $callout;
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    @include mobile {
+        font-size: $subhead;
+    }
 }

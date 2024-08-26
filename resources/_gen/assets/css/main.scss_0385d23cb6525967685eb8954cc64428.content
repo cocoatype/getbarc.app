@@ -9,12 +9,25 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 800; }
-
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem; } }
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800; }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.25rem; } }
 p {
   font-size: 1.25rem;
   margin-top: 1rem;
   margin-bottom: 1rem; }
-
+  @media (max-width: 480px) {
+    p {
+      font-size: 1.125rem; } }
 header.hero {
   text-align: center;
   max-width: 28rem;
@@ -44,21 +57,35 @@ header.hero {
     box-shadow: 0px 2px 2rem #E8E9E9; }
     header.hero form input[type=email] {
       background: #FFFFFF;
-      font-size: 1rem;
-      padding: 14px;
+      padding: 14px 14px;
       border: none;
       border-radius: 14px 0px 0px 14px;
-      margin: 0px; }
+      font-size: 1rem;
+      margin: 0px;
+      flex: 1;
+      min-width: 0; }
       header.hero form input[type=email]:focus {
         outline: none; }
+      @media (max-width: 480px) {
+        header.hero form input[type=email] {
+          flex: 0 1 auto;
+          font-size: 0.75rem; } }
     header.hero form input[type=submit] {
       color: #FFFFFF;
       background: #000000;
       border: none;
       border-radius: 0 14px 14px 0;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 800;
       padding: 14px 28px; }
+      @media (max-width: 480px) {
+        header.hero form input[type=submit] {
+          flex: 0 0 auto;
+          font-size: 0.75rem;
+          font-weight: normal;
+          padding: 0px 14px;
+          overflow: hidden;
+          text-overflow: ellipsis; } }
     header.hero form:focus-within {
       outline: 4px solid rgba(0, 0, 0, 0.3); }
       @media (prefers-color-scheme: dark) {
@@ -68,6 +95,12 @@ header.hero {
       header.hero form {
         box-shadow: none;
         outline-color: #46464B; } }
+    @media (max-width: 480px) {
+      header.hero form {
+        max-width: 19rem; } }
+  @media (max-width: 480px) {
+    header.hero {
+      max-width: 20rem; } }
 section.features {
   margin-top: 2rem; }
   section.features figure.feature {
@@ -89,6 +122,15 @@ section.features {
       margin-right: 0;
       align-self: center;
       text-wrap: balance; }
+      section.features figure.feature figcaption h2 {
+        margin-top: 0; }
+      section.features figure.feature figcaption p {
+        margin-bottom: 0; }
+      @media (max-width: 480px) {
+        section.features figure.feature figcaption {
+          margin-top: 1rem;
+          margin-left: 2rem;
+          margin-right: 2rem; } }
     section.features figure.feature picture {
       margin-top: 2rem;
       margin-right: 4rem;
@@ -96,19 +138,32 @@ section.features {
       section.features figure.feature picture img.phone {
         width: 216px;
         height: 443px; }
-    section.features figure.feature:nth-of-type(even) {
-      flex-direction: row-reverse; }
-      section.features figure.feature:nth-of-type(even) picture {
-        margin-right: 2rem;
-        margin-left: 4rem; }
-      section.features figure.feature:nth-of-type(even) figcaption {
-        margin-right: 2rem;
-        margin-left: 0; }
+      @media (max-width: 480px) {
+        section.features figure.feature picture {
+          margin-right: 0;
+          margin-left: 0; } }
+    @media desktop {
+      section.features figure.feature:nth-of-type(even) {
+        flex-direction: row-reverse; }
+        section.features figure.feature:nth-of-type(even) picture {
+          margin-right: 2rem;
+          margin-left: 4rem; }
+        section.features figure.feature:nth-of-type(even) figcaption {
+          margin-right: 2rem;
+          margin-left: 0; } }
     @media (prefers-color-scheme: dark) {
       section.features figure.feature {
         background: #2C2C2E;
         border: 1px solid #46464B;
         box-shadow: none; } }
+    @media (max-width: 480px) {
+      section.features figure.feature {
+        width: 19rem;
+        height: 25rem;
+        flex-direction: column;
+        align-items: center; }
+        section.features figure.feature picture {
+          margin-top: 0; } }
 html {
   background: #F2F2F5; }
   @media (prefers-color-scheme: dark) {
@@ -128,7 +183,9 @@ main {
   flex-direction: column;
   margin-top: 4rem;
   align-items: center; }
-
+  @media (max-width: 480px) {
+    main {
+      max-width: 20rem; } }
 footer {
   margin-top: 1rem; }
 

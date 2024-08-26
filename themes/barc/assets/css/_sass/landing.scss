@@ -34,14 +34,21 @@ header.hero {
 
         input[type=email] {
             background: $white;
-            font-size: $footnote;
-            padding: 14px;
+            padding: 14px 14px;
             border: none;
             border-radius: 14px 0px 0px 14px;
+            font-size: $footnote;
             margin: 0px;
+            flex: 1;
+            min-width: 0;
 
             &:focus {
                 outline: none;
+            }
+
+            @include mobile {
+                flex: 0 1 auto;
+                font-size: $caption2;
             }
         }
 
@@ -51,8 +58,17 @@ header.hero {
             border: none;
             border-radius: 0 14px 14px 0;
             font-size: $footnote;
-            font-weight: 600;
+            font-weight: 800;
             padding: 14px 28px;
+
+            @include mobile {
+                flex: 0 0 auto;
+                font-size: $caption2;
+                font-weight: normal;
+                padding: 0px 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
 
         &:focus-within {
@@ -67,6 +83,15 @@ header.hero {
             box-shadow: none;
             outline-color: $cellBorderDark;
         }
+
+        @include mobile {
+            max-width: 19rem;
+
+        }
+    }
+
+    @include mobile {
+        max-width: 20rem;
     }
 }
 
@@ -95,6 +120,20 @@ section.features {
             margin-right: 0;
             align-self: center;
             text-wrap: balance;
+
+            h2 {
+                margin-top: 0;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            @include mobile {
+                margin-top: $minor;
+                margin-left: $middle;
+                margin-right: $middle;
+            }
         }
 
         picture {
@@ -106,17 +145,24 @@ section.features {
             margin-top: $middle;
             margin-right: $major;
             margin-left: $middle;
+
+            @include mobile {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
 
-        &:nth-of-type(even) {
-            flex-direction: row-reverse;
-            picture {
-                margin-right: $middle;
-                margin-left: $major;
-            }
-            figcaption {
-                margin-right: $middle;
-                margin-left: 0;
+        @media desktop {
+            &:nth-of-type(even) {
+                flex-direction: row-reverse;
+                picture {
+                    margin-right: $middle;
+                    margin-left: $major;
+                }
+                figcaption {
+                    margin-right: $middle;
+                    margin-left: 0;
+                }
             }
         }
 
@@ -124,6 +170,17 @@ section.features {
             background: $secondaryFillDark;
             border: 1px solid $cellBorderDark;
             box-shadow: none;
+        }
+
+        @include mobile {
+            width: 19rem;
+            height: 25rem;
+            flex-direction: column;
+            align-items: center;
+
+            picture {
+                margin-top: 0;
+            }
         }
     }
 }

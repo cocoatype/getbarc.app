@@ -30,6 +30,10 @@ main {
     flex-direction: column;
     margin-top: $major;
     align-items: center;
+
+    @include mobile {
+        max-width: $pageMobile;
+    }
 }
 
 header {
