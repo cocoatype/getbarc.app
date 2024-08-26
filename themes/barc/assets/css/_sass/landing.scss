@@ -152,8 +152,9 @@ section.features {
             }
         }
 
-        @media desktop {
-            &:nth-of-type(even) {
+
+        &:nth-of-type(even) {
+            @include desktop {
                 flex-direction: row-reverse;
                 picture {
                     margin-right: $middle;
