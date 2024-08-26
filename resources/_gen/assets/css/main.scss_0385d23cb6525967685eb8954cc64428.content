@@ -1,6 +1,8 @@
 ::selection {
   background-color: rgba(0, 0, 0, 0.3); }
-
+  @media (prefers-color-scheme: dark) {
+    ::selection {
+      background-color: rgba(255, 255, 255, 0.3); } }
 h1 {
   font-size: 1.875rem;
   line-height: 1.25;
@@ -20,11 +22,16 @@ header.hero {
   flex-direction: column;
   align-items: center; }
   header.hero img.app-icon {
+    background: #FFFFFF;
     border: 1px solid #E8E9E9;
     border-radius: 28.5px;
     box-shadow: 0px 2px 1rem #E8E9E9;
     width: 8rem;
     height: 8rem; }
+    @media (prefers-color-scheme: dark) {
+      header.hero img.app-icon {
+        border-color: #46464B;
+        box-shadow: none; } }
   header.hero p {
     max-width: 18rem; }
   header.hero form {
@@ -54,7 +61,13 @@ header.hero {
       padding: 14px 28px; }
     header.hero form:focus-within {
       outline: 4px solid rgba(0, 0, 0, 0.3); }
-
+      @media (prefers-color-scheme: dark) {
+        header.hero form:focus-within {
+          outline-color: rgba(255, 255, 255, 0.3); } }
+    @media (prefers-color-scheme: dark) {
+      header.hero form {
+        box-shadow: none;
+        outline-color: #46464B; } }
 section.features {
   margin-top: 2rem; }
   section.features figure.feature {
@@ -91,15 +104,23 @@ section.features {
       section.features figure.feature:nth-of-type(even) figcaption {
         margin-right: 2rem;
         margin-left: 0; }
-
+    @media (prefers-color-scheme: dark) {
+      section.features figure.feature {
+        background: #2C2C2E;
+        border: 1px solid #46464B;
+        box-shadow: none; } }
 html {
   background: #F2F2F5; }
-
+  @media (prefers-color-scheme: dark) {
+    html {
+      background: #000000; } }
 body {
   color: #000000;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px; }
-
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #FFFFFF; } }
 main {
   display: flex;
   margin: auto;
@@ -113,3 +134,6 @@ footer {
 
 a {
   color: #000000; }
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: #FFFFFF; } }

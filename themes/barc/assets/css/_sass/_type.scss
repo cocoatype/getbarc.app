@@ -11,7 +11,11 @@ $title1: 3.75rem; // 60px
 $largeTitle: 4.5rem; // 72px
 
 ::selection {
-    background-color: $selection;
+    background-color: $selectionLight;
+
+    @include dark {
+        background-color: $selectionDark;
+    }
 }
 
 h1 {
