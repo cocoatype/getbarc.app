@@ -21,6 +21,7 @@ header.hero {
     
     p {
         max-width: 18rem;
+        font-size: $callout;
     }
 
     form {
@@ -127,6 +128,7 @@ section.features {
 
             p {
                 margin-bottom: 0;
+                font-size: $callout;
             }
 
             @include mobile {
@@ -183,5 +185,26 @@ section.features {
                 margin-top: 0;
             }
         }
+    }
+}
+
+section.faq {
+    margin-top: $middle;
+    max-width: 30rem;
+
+    h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    h3 {
+        margin-top: $minor;
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+
+    p {
+        margin: 0;
+        margin-top: 0.5rem;
     }
 }
