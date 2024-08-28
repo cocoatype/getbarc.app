@@ -1,6 +1,6 @@
 header.hero {
     text-align: center;
-    max-width: 28rem;
+    max-width: 32rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,10 +18,25 @@ header.hero {
             box-shadow: none;
         }
     }
+
+    h1 {
+        font-size: $title3;
+
+        @include mobile {
+            font-size: $body;
+            text-wrap: balance;
+        }
+    }
     
     p {
-        max-width: 18rem;
-        font-size: $callout;
+        max-width: 24rem;
+        font-size: $body;
+        line-height: 1.4;
+
+        @include mobile {
+            font-size: $subhead;
+            text-wrap: balance;
+        }
     }
 
     form {
@@ -32,6 +47,7 @@ header.hero {
         outline: 1px solid $cellBorderLight;
         border-radius: 14px;
         box-shadow: $shadow;
+        width: 100%;
 
         input[type=email] {
             background: $white;
@@ -106,8 +122,8 @@ section.features {
         box-shadow: $shadow;
         display: flex;
         flex-direction: row;
-        width: $page;
-        height: 20rem;
+        max-width: $page;
+        height: 30rem;
         margin: $middle 0;
         overflow: hidden;
 
@@ -116,32 +132,47 @@ section.features {
         }
         
         figcaption {
-            margin: $middle;
+            margin: $major;
             flex: 1;
             margin-right: 0;
             align-self: center;
-            text-wrap: balance;
+            // text-wrap: balance;
 
             h2 {
+                font-size: $headline;
                 margin-top: 0;
+                @include mobile {
+                    font-size: $callout;
+                }
             }
 
             p {
                 margin-bottom: 0;
-                font-size: $callout;
+                line-height: 1.5;
+                font-size: $body;
+                @include mobile {
+                    font-size: $subhead;
+                }
             }
 
             @include mobile {
                 margin-top: $minor;
                 margin-left: $middle;
                 margin-right: $middle;
+                margin-bottom: $minor;
             }
         }
 
         picture {
             img.phone {
-                width: 216px;
-                height: 443px;
+                object-fit: contain;
+                width: 292px;
+                height: 600px;
+
+                @include mobile {
+                    width: 219px;
+                    height: 444px;
+                }
             }
             
             margin-top: $middle;
@@ -163,7 +194,7 @@ section.features {
                     margin-left: $major;
                 }
                 figcaption {
-                    margin-right: $middle;
+                    margin-right: $major;
                     margin-left: 0;
                 }
             }
