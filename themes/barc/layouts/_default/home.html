@@ -1,7 +1,5 @@
 {{ define "main" }}
+<main class="landing">
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+</main>
 {{ end }}
