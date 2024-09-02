@@ -129,7 +129,7 @@ section.features {
         flex-direction: row;
         max-width: $pageLanding;
         height: 30rem;
-        margin: $middle 0;
+        margin: $major 0;
         overflow: hidden;
 
         &:first-child {
@@ -216,6 +216,7 @@ section.features {
             height: 25rem;
             flex-direction: column;
             align-items: center;
+            margin: $middle 0;
 
             picture {
                 margin-top: 0;
