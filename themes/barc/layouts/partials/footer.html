@@ -1,12 +1,10 @@
-<footer>
-  <div id="footer-content">
-    <span class="copyright">© {{ now.Year }} <a href="https://cocoatype.com" aria-label="cocoa type">Cocoatype</a></span>
-    <nav class="links">
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-      <a href="/releases">Releases</a>
-      <a href="/contact">Contact</a>
-      <a href="/press">Press</a>
-    </nav>
-  </div>
-</footer>
+<div id="footer-content">
+  <span class="copyright">© {{ now.Year }} <a href="https://cocoatype.com" aria-label="cocoa type">Cocoatype</a></span>
+  <nav class="links">
+    <a href="/" {{ if eq .RelPermalink "/" }}aria-current="page"{{ end }}>Home</a>
+    <a href="/blog/" {{ if eq .RelPermalink "/blog/" }}aria-current="page"{{ end }}>Blog</a>
+    <a href="/releases/" {{ if eq .RelPermalink "/releases/" }}aria-current="page"{{ end }}>Releases</a>
+    <a href="/contact/" {{ if eq .RelPermalink "/contact/" }}aria-current="page"{{ end }}>Contact</a>
+    <a href="/press/" {{ if eq .RelPermalink "/press/" }}aria-current="page"{{ end }}>Press</a>
+  </nav>
+</div>

@@ -2,3 +2,7 @@ baseURL = 'https://getbarc.app/'
 languageCode = 'en-us'
 title = 'Barc'
 theme = 'barc'
+disableHugoGeneratorInject = true
+
+[params]
+  description = "Barc organizes and smartly fetches important barcodes. Concert tickets, loyalty cards, and gym memberships. Barc has them when you need them. Coming soon."

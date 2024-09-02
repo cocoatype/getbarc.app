@@ -38,6 +38,7 @@ footer {
     width: 32rem;
     display: flex;
     justify-content: space-between;
+    gap: 0.4rem;
 
     @include mobile {
         width: calc(100vw - 1.5rem);
