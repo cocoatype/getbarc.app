@@ -180,6 +180,13 @@ section.features {
                 }
             }
             
+            img.watch {
+                object-fit: contain;
+                width: 221px;
+                margin: 0px 35px;
+                height: 379px;
+            }
+
             margin-top: $middle;
             margin-right: $major;
             margin-left: $middle;
