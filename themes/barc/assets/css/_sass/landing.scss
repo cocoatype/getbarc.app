@@ -1,6 +1,11 @@
 main.landing {
-    max-width: $pageLanding;
+    width: $pageLanding;
     align-items: center;
+
+    @include mobile {
+        margin: $major 0;
+        width: calc(100vw - #{$middle});
+    }
 }
 
 header.hero {
@@ -146,6 +151,7 @@ section.features {
             h2 {
                 font-size: $headline;
                 margin-top: 0;
+                margin-bottom: 1rem;
                 @include mobile {
                     font-size: $callout;
                 }
@@ -243,7 +249,6 @@ section.faq {
 
     h3 {
         margin-top: $minor;
-        margin-bottom: 0;
         line-height: 1.5;
     }
 
