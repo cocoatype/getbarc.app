@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <main>
+    <article>
+    <h1>{{ .Title }} &mdash; {{ dateFormat "January 2, 2006" .Date }}</h1>
+    {{ .Content }}
+    <strong><a href="/appstore/">Get Barc {{ .Title }} on the App Store.</a></strong>
+    </article>
+  </main>
+{{ end }}
