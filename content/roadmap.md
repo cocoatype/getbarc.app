@@ -2,16 +2,26 @@
 title = "Roadmap"
 +++
 
-## Barc 24.6
+## [Barc 25.0](https://github.com/orgs/cocoatype/projects/26)
 
-### Search Bar
-Add a search bar to the main barcodes list, making it easier to find barcodes.
+### Streamlined Onboarding
 
-### Increased Shortcuts support
-Barc will include more Shortcuts actions, including creating barcodes, scanning images, listing codes, and setting locations/dates.
+### Improved Empty Library
 
-## Barc 24.7
+### What&apos;s New
 
-### PDF417 Support
-Support for the PDF417 barcode format, used by retailers such as Starbucks and drivers licenses for most U.S states.
+## [Barc 25.1](https://github.com/orgs/cocoatype/projects/27)
 
+### Apple Watch Complication
+
+## [Barc 25.2](https://github.com/orgs/cocoatype/projects/28)
+
+### Live-Updating Widget
+
+## [Barc 25.3](https://github.com/orgs/cocoatype/projects/29)
+
+### Photos Library Access
+
+## [Barc 25.4](https://github.com/orgs/cocoatype/projects/31)
+
+### Location Improvements
