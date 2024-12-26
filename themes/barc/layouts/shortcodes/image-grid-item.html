@@ -1,0 +1,4 @@
+<div class="image-grid-item">
+  {{ partial "picture.html" (dict "root" (.Get "root") "alt" (.Get "alt") "dark" (.Get "dark")) }}
+  {{ .Inner | markdownify }}
+</div>
