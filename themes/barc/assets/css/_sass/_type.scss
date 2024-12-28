@@ -61,3 +61,17 @@ p {
 code {
     text-wrap: wrap;
 }
+
+blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-left: 1em;
+
+    border-left: 3px solid $cellBorderLight;
+
+    @include dark {
+        border-color: $cellBorderDark;
+    }
+}
