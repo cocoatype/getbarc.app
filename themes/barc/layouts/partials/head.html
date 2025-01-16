@@ -1,10 +1,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/js.html" . }}
-{{ partialCached "head/css.html" . }}
 
-<meta name="description" 
+{{ $styleOptions := (dict "includePaths" (slice "assets/_sass")) }}
+{{ $style := resources.Get "main.scss" | css.Sass $styleOptions }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+<meta name="description"
       content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Barc{{ end }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ .Permalink }}" />

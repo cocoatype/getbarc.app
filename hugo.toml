@@ -7,3 +7,8 @@ disableHugoGeneratorInject = true
 [params]
   description = "Barc organizes and smartly fetches important barcodes. Concert tickets, loyalty cards, and gym memberships. Barc has them when you need them. Get it on the App Store."
   telemetryDeckID = "F966A11C-487A-447A-8A4B-283C543C5686"
+
+[build]
+  [[build.cachebusters]]
+    source = 'assets/.*\.(scss|sass)'
+    target = 'css'

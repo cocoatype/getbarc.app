@@ -33,10 +33,10 @@ Barc supports the Codabar, Code 128, Code 39, EAN-13/UPC-A, PDF417, and QR code 
 ## Quotes
 
 > "Barc provides one place to hold all your important barcodes, with easy access from everywhere in iOS. Rather than forcing users to adapt to the app, I wanted Barc to adapt to how people naturally want to work."
-> 
+>
 > &mdash; Geoff Pado, Developer
 
-> **Shrank my wallet**  
+> **Shrank my wallet**
 > Was able to digitize a bunch of loyalty cards that were taking up space in my wallet.
 >
 > &mdash; triggerprobe, App Store Review
@@ -44,20 +44,48 @@ Barc supports the Codabar, Code 128, Code 39, EAN-13/UPC-A, PDF417, and QR code 
 ## Screenshots/Demo
 
 {{< image-grid >}}
-    {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
-[Raw](#)
-    {{< /image-grid-item >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[Raw](#) &ndash; [Framed](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[Raw](#) &ndash; [Framed](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[Raw](#) &ndash; [Framed](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[Raw](#) &ndash; [Framed](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[Raw](#) &ndash; [Framed](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
 {{< /image-grid >}}
 
-All screenshots are both in both “raw” and device-framed versions.
-
-- Screenshot of main app screen
+<!-- - Screenshot of main app screen
 - Screenshot of scanning a barcode
 - Screenshot of Home Screen widget
 - Screenshot of location search
-- Screenshot of Apple Watch app
+- Screenshot of Apple Watch app -->
 
 ## Media Assets
+
+{{< image-grid >}}
+  {{< image-grid-item root="/images/landing/import"alt="foobar" >}}
+    {{< image-grid-links >}}
+[PNG](#) &ndash; [SVG](#)
+    {{< /image-grid-links >}}
+  {{< /image-grid-item >}}
+{{< /image-grid >}}
 
 - High-res app icon
 - Vector app icon

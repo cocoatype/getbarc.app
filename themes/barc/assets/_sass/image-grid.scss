@@ -1,0 +1,44 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    .image-grid-item {
+        display: flex;
+        flex-direction: column;
+
+        picture {
+            background: $white;
+            border: 1px solid $cellBorderLight;
+            border-radius: 14px;
+            box-shadow: $shadow;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+
+            img {
+                position: absolute;
+                top: 0.5em;
+                left: 0.5em;
+                width: calc(100% - 1em);
+                height: calc(100% - 1em);
+                object-fit: contain;
+            }
+
+            @include dark {
+                background: $secondaryFillDark;
+                border: 1px solid $cellBorderDark;
+                box-shadow: none;
+            }
+        }
+
+        .image-grid-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.25em;
+            margin-top: 0.25em;
+
+            font-size: $caption1;
+        }
+    }
+}
