@@ -1,0 +1,77 @@
+$caption2: 0.75rem; // 12px
+$caption1: 0.875rem; // 14px
+$footnote: 1rem; // 16px
+$subhead: 1.125rem; // 18px
+$callout: 1.25rem; // 20px
+$body: 1.5rem; // 24px
+$headline: 1.875rem; // 30px
+$title3: 2.25rem; // 36px
+$title2: 3rem; // 48px
+$title1: 3.75rem; // 60px
+$largeTitle: 4.5rem; // 72px
+
+::selection {
+    background-color: $selectionLight;
+
+    @include dark {
+        background-color: $selectionDark;
+    }
+}
+
+h1 {
+    font-size: $headline;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+
+    @include mobile {
+        font-size: $body;
+    }
+}
+
+h2 {
+    font-size: $body;
+    line-height: 1.25;
+    margin-top: 2rem;
+    font-weight: 800;
+
+    @include mobile {
+        font-size: $callout;
+    }
+}
+
+h3 {
+    font-size: $subhead;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: $footnote;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+
+    @include mobile {
+        font-size: $subhead;
+    }
+}
+
+code {
+    text-wrap: wrap;
+}
+
+blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-left: 1em;
+
+    border-left: 3px solid $cellBorderLight;
+
+    @include dark {
+        border-color: $cellBorderDark;
+    }
+}

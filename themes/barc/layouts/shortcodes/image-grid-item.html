@@ -1,0 +1,17 @@
+<div class="image-grid-item">
+  <picture>
+    <img class="phone" src="{{ (.Get "root") }}{{ if (.Get "vector") }}{{ else }}-framed{{ end }}.png" alt="{{ (.Get "alt") }}">
+  </picture>
+  <div class="image-grid-links">
+    {{ if (.Get "vector") }}
+    <a href="{{ (.Get "root") }}.png">PNG</a>
+    &ndash;
+    <a href="{{ (.Get "root") }}.svg">SVG</a>
+    {{ else }}
+    <a href="{{ (.Get "root") }}-framed.png">Framed</a>
+    &ndash;
+    <a href="{{ (.Get "root") }}-raw.png">Raw</a>
+    {{ end }}
+  </div>
+  {{ .Inner }} <!-- I don't know why this line needs to exist, but it does. -->
+</div>

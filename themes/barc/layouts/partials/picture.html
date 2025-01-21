@@ -1,0 +1,40 @@
+<picture>
+    {{ if .dark }}
+    <source
+      type="image/webp"
+      media="(prefers-color-scheme: dark)"
+      srcset="{{ .root }}-dark.webp 1x,
+              {{ .root }}-dark@2x.webp 2x,
+              {{ .root }}-dark@3x.webp 3x">
+    <source
+      type="image/webp"
+      media="(prefers-color-scheme: light)"
+      srcset="{{ .root }}.webp 1x,
+              {{ .root }}@2x.webp 2x,
+              {{ .root }}@3x.webp 3x">
+    <source
+      type="image/png"
+      media="(prefers-color-scheme: dark)"
+      srcset="{{ .root }}-dark.png 1x,
+              {{ .root }}-dark@2x.png 2x,
+              {{ .root }}-dark@3x.png 3x">
+    <source
+      type="image/png"
+      media="(prefers-color-scheme: light)"
+      srcset="{{ .root }}.png 1x,
+              {{ .root }}@2x.png 2x,
+              {{ .root }}@3x.png 3x">
+    {{ else }}
+    <source
+      type="image/webp"
+      srcset="{{ .root }}.webp 1x,
+              {{ .root }}@2x.webp 2x,
+              {{ .root }}@3x.webp 3x">
+    <source
+      type="image/png"
+      srcset="{{ .root }}.png 1x,
+              {{ .root }}@2x.png 2x,
+              {{ .root }}@3x.png 3x">
+    {{ end }}
+    <img class="phone" src="{{ .root }}.png" alt="{{ .alt }}">
+</picture>
